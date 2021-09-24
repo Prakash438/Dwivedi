@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>DwivediDairyFarm Order</title>
+  <link rel="icon" href="cow_PNG50589.png" type="image/X-icon">
+  <link rel="stylesheet" href="order.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="title">
+      Order now
+    </div>
+    <form action="order.php" method="POST">
+      <div class="form">
+        <div class="inputfield">
+          <label>Full Name</label>
+          <input type="text" class="input" name="fname" id="fname" pattern="[a-zA-Z]+\s+[a-zA-Z]+\s+[a-zA-Z]+" required
+            title="Hello">
+        </div>
+        <div class="inputfield">
+          <label>Select Product</label>
+          <div class="custom_select">
+            <select name="selectp" id="selectp" required>
+              <option value="">Select</option>
+              <option value="milk">Milk</option>
+              <option value="panir">Panir</option>
+              <option value="khoya">Khoya</option>
+              <option value="ghee">Ghee</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="inputfield">
+          <label>Product in kg/L</label>
+          <input type="text" class="input" name="product" id="product" pattern="[0-9]+[a-zA-Z][a-zA-Z]" required>
+        </div>
+
+        <div class="inputfield">
+          <label>Email Address</label>
+          <input type="email" class="input" name="email" id="email"
+            pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-zA-Z]{2,4}" required>
+        </div>
+        <div class="inputfield">
+          <label>Phone Number</label>
+          <input type="text" class="input" name="phno" id="phno" pattern="[6-9]{1}[0-9]{9}" required>
+        </div>
+        <div class="inputfield">
+          <label>Full Address</label>
+          <textarea class="textarea" name="address" id="address" pattern="[a-zA-Z0-9]+(\s([a-zA-Z0-9]+\s)+)[a-zA-Z0-9]+"
+            required></textarea>
+        </div>
+        <div class="inputfield">
+          <label>Pin Code</label>
+          <input type="text" class="input" name="pin" id="pin" pattern="[0-9]{6}" required>
+        </div>
+
+        <button type="submit" name="submit"><b>Place Order</b></button>
+
+      </div>
+    </form>
+  </div>
+  <footer>
+    <span>Developed By <a href="https://www.linkedin.com/in/ankit-dwivedi-63b6021a4/?originalSubdomain=in"
+        target="blank">AnkitDwivedi</a> | <span class="far fa-copyright"></span> 2021 All copyrights
+      reserved.</span>
+  </footer>
+</body>
+
+</html>
